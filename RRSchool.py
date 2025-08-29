@@ -113,11 +113,16 @@
 # kv = a**2
 # print ("Квадрат числа:", kv)
 
-a = int(input("Число 1:"))
-b = float(input("Число 2:"))
-print(a + b)
-print(a - b)
-print(a * b)
-print(a / b)
-print(a // b)
-print(a % b)
+# a = int(input("Число 1:"))
+# b = float(input("Число 2:"))
+# print(a + b)
+# print(a - b)
+# print(a * b)
+# print(a / b)
+# print(a // b)
+# print(a % b)
+
+
+a = int(input("Число: "))
+kv = a**2
+print("Квадрат числа:", kv)
