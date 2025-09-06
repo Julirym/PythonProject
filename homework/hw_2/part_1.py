@@ -213,12 +213,44 @@
 # else:
 #     print("Это не день недели!")
 
-count = 0
+# count = 0
+#
+# while True:
+#     a = int(input("Введите целое число: "))
+#     if a < 0:
+#         break
+#     count = count + a  # count += a (тоже самое)
+#
+# print("Сумма всех введенных чисел (без отрицательного):", count)
 
-while True:
-    a = int(input("Введите целое число: "))
-    if a < 0:
-        break
-    count = count + a  # count += a (тоже самое)
-
-print("Сумма всех введенных чисел (без отрицательного):", count)
+# count = 0
+#
+# while True:
+#     a = int(input("Введите целое число: "))
+#     if a < 0:
+#         break
+#     count = count + a  # count += a (тоже самое)
+#
+# print("Сумма всех введенных чисел (без отрицательного):", count)
+#
+# # Задача 1 урок 4
+# count = 0
+#
+# while True:
+#     a = int(input("Введите целое число: "))
+#     if a < 0:
+#         break
+#     count = count + a  # count += a (тоже самое)
+#
+# print("Сумма всех введенных чисел (без отрицательного):", count)
+#
+# # Задача 1 урок 5
+# count = 0
+#
+# while True:
+#     a = int(input("Введите целое число: "))
+#     if a < 0:
+#         break
+#     count = count + a  # count += a (тоже самое)
+#
+# print("Сумма всех введенных чисел (без отрицательного):", count)
