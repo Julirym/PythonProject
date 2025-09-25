@@ -118,13 +118,76 @@
 
 # Напишите функцию squares(), которая имеет один параметр - число n. Функция будет возвращать список состоящий из квадратов чисел от 1 до n.
 
+# def squares(n):
+#     list = []
+#
+#     for i in range(1,n+1):
+#         list.append(i**2)
+#     return list
+#
+# print(squares(5))  # Выведет [1, 4, 9, 16, 25]
+
+# def squares(n):
+#     return [i**2 for i in range(1, n + 1)]
+#
+# print(squares(5))  # Вывод: [1, 4, 9, 16, 25]
+
 
 # Напишите функцию, которая возвращает наибольший общий делитель двух чисел.
+
+# def gcd_simple(a, b):
+#     min_num = min(a, b)
+#     for i in range(min_num, 0, -1):
+#         if a % i == 0 and b % i == 0:
+#             return i
+#
+# print(gcd_simple(24, 36))  # Выведет 12
+
+#
+# import math
+# print(math.gcd(24, 36))  # Вывод: 12
 
 
 # Напишите функцию, которая возвращает количество цифр в числе.
 
+# n = int(input("Введите число: "))
+# count = 0
+#
+# temp = abs(n)  # берем абсолютное значение, чтобы считать цифры в отрицательном числе
+#
+# while temp > 0:
+#     count += 1
+#     temp //= 10  # отбрасываем последнюю цифру
+#
+# if n == 0:
+#     count = 1  # если число 0, количество цифр равно 1
+#
+# print("Количество цифр равно:", count)
+
+# def count_digits(n):
+#     n = abs(n)  # берем абсолютное значение, чтобы работать с отрицательными числами
+#     if n == 0:
+#         return 1  # у числа 0 одна цифра
+#     count = 0
+#     while n > 0:
+#         count += 1
+#         n //= 10  # удаляем последнюю цифру с помощью целочисленного деления
+#     return count
+#
+# print(count_digits(12345))   # Вывод: 5
+# print(count_digits(-9876))   # Вывод: 4
+# print(count_digits(0))       # Вывод: 1
+
 
 # Напишите функцию, которая будет возвращать сумму чётных чисел в списке.
 
-
+# def sum_numbers(items):
+#     total = 0
+#     for i in items:
+#         if isinstance(i, int) and i % 2 == 0:
+#             total += i
+#     return total
+#
+# items = [1, 2, 5, 4]
+#
+# print(sum_numbers(items))
