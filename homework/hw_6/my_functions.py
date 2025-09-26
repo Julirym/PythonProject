@@ -1,1 +1,6 @@
-# from my_functions import add, sub
+def add (a, b):
+    return a + b
+
+def sub (a, b):
+    return a - b
+

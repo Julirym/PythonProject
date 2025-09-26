@@ -1,7 +1,7 @@
 # from my_functions import add, sub
-
+#
 # print(add(1, 2))
-# print(sub(1, 2))
+# print(sub(3, 2))
 #
 # import my_functions
 #
