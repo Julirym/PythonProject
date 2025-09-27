@@ -128,8 +128,45 @@
 # Создайте анонимную функцию pow, которая принимает 2 аргумента x и y.
 # Функция должна возвращать x, возведенное в степень y.
 
-# 3
+# pow = lambda x, y: x ** y
+#
+# print(pow(2, 3))  #8
+#
+# def pow(a, b):
+#     return a ** b
+#
+# print(pow(2, 3))  # 8
+
 # Змея
 # Создайте функцию snake_talk, которая принимает 1 аргумент text (строка).
 # Функция должна создать новую строку, где все гласные буквы aeiouyAEIOUY в строке text дублируются.
 # Например, такой вызовы функции snake_talk(“Harry”) должен вернуть строку “Haaryy”
+
+# text = "hello"
+# vowels = 'aeiouyAEIOUY'
+# result = ""
+#
+# for ch in text:
+#     if ch in vowels:
+#         result += ch * 2  # дублируем символ
+#     else:
+#         result += ch
+#
+# print(result)
+
+# text = "hello"
+# snake_talk = map(lambda x: x ** 2, text)
+#
+# print(snake_talk)
+
+# def snake_talk(text):
+#     result = ""
+#     for i in text:
+#         if i in 'aeiouyAEIOUY':
+#             result += i * 2  # дублируем гласные
+#         else:
+#             result += i
+#     return result  # вернуть итоговую строку
+#
+# text = "hello"
+# print(snake_talk(text))  # Вывод: heelloo
