@@ -20,4 +20,17 @@
 #     else:
 #         return False
 
-
+#Домашка с ревью - будем переносить функции в HW_perenos:
+# def mul(a, b):
+#     return a*b
+#
+# def div(c, d):
+#     if d == 0:
+#         return "Not zero"
+#     return c/d
+#
+# def summ(e, f):
+#     return e+f
+#
+# def sub(g, h):
+#     return g-h

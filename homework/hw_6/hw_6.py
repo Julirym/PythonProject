@@ -170,3 +170,4 @@
 #
 # text = "hello"
 # print(snake_talk(text))  # Вывод: heelloo
+

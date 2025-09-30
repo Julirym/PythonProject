@@ -27,3 +27,11 @@
 #
 # print(is_triangle(1, 2, 6))
 # print(sum_ignore_non_numbers([2, 3, 'Hy', None, 1.5]))
+
+#Домашка с ревью - будем переносить функции из my_file_func:
+# import my_file_func as funcs
+#
+# print(funcs.mul(4, 2))
+# print(funcs.div(16, 2))
+# print(funcs.summ(2, 6))
+# print(funcs.sub(10, 2))
