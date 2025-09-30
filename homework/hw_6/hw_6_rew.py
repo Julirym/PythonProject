@@ -12,3 +12,12 @@
 # map_lmb = list(filter(lambda x: x>0, nums_two))
 # print(map_lmb)
 
+"""
+Импортируем функции с конвертера
+"""
+
+# import converter_hw as conv
+#
+# print(conv.far(95))
+# print(conv.cel(28))
+
