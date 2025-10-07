@@ -123,8 +123,10 @@ my_toyota.display_speed() # вывел в консоль 3
 Создайте класс Car, который принимает марку автомобиля (make) в виде строки и максимально возможную скорость (max_speed) в виде целого числа при создании. 
 Также при инициализации (в теле __init__) экземпляра Car должен быть автоматически создан атрибут speed, равный 0 (текущая скорость автомобиля).
 Создайте метод display_speed(), который выводит в консоль текущую скорость автомобиля.
-Создайте метод accelerate(), который увеличивает скорость автомобиля на 10, при этом скорость автомобиля не должна превышать max_speed, если вызывается accelerate() при максимальной скорости, то скорость не должна увеличиваться.
-Создайте метод brake(), который уменьшает скорость автомобиля на 10, при этом скорость автомобиля не может быть меньше 0. Если вызывается метод brake() при скорости равной 0, то скорость не должна уменьшаться.
+Создайте метод accelerate(), который увеличивает скорость автомобиля на 10, при этом скорость автомобиля не должна превышать max_speed, если вызывается accelerate() при максимальной скорости, 
+то скорость не должна увеличиваться.
+Создайте метод brake(), который уменьшает скорость автомобиля на 10, при этом скорость автомобиля не может быть меньше 0. 
+Если вызывается метод brake() при скорости равной 0, то скорость не должна уменьшаться.
 
 Пример:
 my_toyota = Car("Toyota", 180)
@@ -134,19 +136,24 @@ my_toyota.accelerate()
 my_toyota.display_speed() # вывел в консоль 3
 '''
 
-class Car:
-    def __init__(self, make, max_speed, speed = 0):
-        self.make = make
-        self.max_speed = max_speed
-        self.speed = speed
-
-
-    def display_speed():
-        return
-
-    def accelerate():
-
-    def brake():
-
-my_toyota = Car("Toyota", 180)
-my_toyota.accelerate()
+# class Car:
+#     def __init__(self, make, max_speed):
+#         self.make = make
+#         self.max_speed = max_speed
+#         self.speed = 0
+#
+#
+#     def display_speed(self):
+#         print(self.speed)
+#
+#     def accelerate(self):
+#         self.speed = min(self.max_speed, self.speed + 10)
+#
+#     def breake(self):
+#         self.speed = max(0, self.speed - 10)
+#
+# my_toyota = Car("Toyota", 0)
+# my_toyota.accelerate()
+#
+# print(my_toyota.speed)
+# my_toyota.display_speed()
