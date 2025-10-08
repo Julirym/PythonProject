@@ -157,19 +157,37 @@
 # traffic_light.switch()
 # print(traffic_light.color)  # red
 
-class Lamp:
-    def __init__(self, is_on):
-        self.is_on = is_on
+# №6
+# class Lamp:
+#     def __init__(self):
+#         self.is_on = False
+#
+#     def turn_on(self):
+#         self.is_on = True
+#
+#     def turn_off(self):
+#         self.is_on = False
+#
+#     def toggle(self):
+#         self.is_on = not self.is_on
+#
+#     def status(self):
+#         if self.is_on:
+#             print("Лампа включена")
+#         else:
+#             print("Лампа выключена")
+#
+# lamp = Lamp()
+#
+# lamp.status()      # Лампа выключена
+# lamp.turn_on()
+# lamp.status()      # Лампа включена
+# lamp.toggle()
+# lamp.status()      # Лампа выключена
+# lamp.toggle()
+# lamp.status()      # Лампа включена
+# lamp.turn_off()
+# lamp.status()      # Лампа выключена
 
-    def turn_on(self):
-        if self.is_on:
-
-
-    def turn_off(self):
-
-    def toggle(self):
-
-    def status(self):
-        print()
-
+# №7
 
