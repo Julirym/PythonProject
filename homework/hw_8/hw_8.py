@@ -261,7 +261,8 @@
 # print(f"Текущий баланс: {jack_account.get_balance()}") # выведет итоговый баланс
 
 #  №3
-# Есть список пользователей users, где каждый пользователь представлен словарем с ключами id, name, и age. Некоторые пользователи могут иметь некорректное значение для ключа name.
+# Есть список пользователей users, где каждый пользователь представлен словарем с ключами id, name, и age.
+# Некоторые пользователи могут иметь некорректное значение для ключа name.
 # Под некорректным значением понимается любой тип, который не является строкой.
 # Создайте список ids, в который будут включены идентификаторы (id) тех пользователей, у которых значение по ключу name некорректно.
 # Выведите список на экран.
@@ -278,3 +279,51 @@
 # ]
 
 # Ответ должен быть: [1232, 33412, 745633]
+#
+# class User:
+#     def __init__(self, user_id, name, age):
+#         self.id = user_id
+#         self.name = name
+#         self.age = age
+#
+#
+# class UserCollection:
+#     def __init__(self, users):
+#         # Принимаем список словарей и создаём список объектов User
+#         self.users = [User(u['id'], u['name'], u['age']) for u in users]
+#
+#     def get_invalid_name_ids(self):
+#         # Возвращаем список id пользователей, у которых name не является строкой
+#         return [user.id for user in self.users if not isinstance(user.name, str)]
+#
+# users_data = [
+#     {'id': 345324, 'name': 'Alice', 'age': 25},
+#     {'id': 1232, 'name': 123, 'age': 30},
+#     {'id': 7854, 'name': 'Bob', 'age': 22},
+#     {'id': 33412, 'name': None, 'age': 35},
+#     {'id': 78845, 'name': 'Charlie', 'age': 28},
+#     {'id': 45325, 'name': 'Eve', 'age': 40},
+#     {'id': 745633, 'name': True, 'age': 19},
+#     {'id': 64364, 'name': 'Frank', 'age': 33}
+# ]
+#
+# collection = UserCollection(users_data)
+# invalid_ids = collection.get_invalid_name_ids()
+# print(invalid_ids)  # [1232, 33412, 745633]
+
+#
+# users = [
+#     {'id': 345324, 'name': 'Alice', 'age': 25},
+#     {'id': 1232, 'name': 123, 'age': 30},
+#     {'id': 7854, 'name': 'Bob', 'age': 22},
+#     {'id': 33412, 'name': None, 'age': 35},
+#     {'id': 78845, 'name': 'Charlie', 'age': 28},
+#     {'id': 45325, 'name': 'Eve', 'age': 40},
+#     {'id': 745633, 'name': True, 'age': 19},
+#     {'id': 64364, 'name': 'Frank', 'age': 33}
+# ]
+#
+# ids = [user['id'] for user in users if not isinstance(user['name'], str)]
+#
+# print(ids)  # Выведет: [1232, 33412, 745633]
+
