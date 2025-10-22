@@ -9,7 +9,7 @@
 # greet("Леша")
 # greet("Саша")
 # greet(123)
-from homework.hw_4.hw_4 import total
+from homework_theory.hw_4.hw_4 import total
 
 
 # def greet(name="Гость"):
